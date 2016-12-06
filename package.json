@@ -1,5 +1,5 @@
 {
-  "name": "angular-2",
+  "name": "angular-2-user-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "typings": "typings",
     "postinstall": "typings install"
   },
-  "license": "ISC",
+  "license": "MIT",
+  "author": "Jeroen Ouwehand",
   "devDependencies": {
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
