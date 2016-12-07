@@ -28,7 +28,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         templateUrl: './app/app.component.html',
-        styles: ['./app.component.css']
+        styles: ['./app/app.component.css']
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
