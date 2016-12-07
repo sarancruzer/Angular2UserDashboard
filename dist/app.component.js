@@ -22,13 +22,16 @@ var AppComponent = (function () {
         this.activeUser = user;
         console.log(this.activeUser);
     };
+    AppComponent.prototype.onUserCreated = function (event) {
+        this.users.push(event.user);
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         templateUrl: './app/app.component.html',
-        styles: ['./app/app.component.css']
+        styleUrls: ['./app/app.component.css']
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);

@@ -22,7 +22,7 @@ __decorate([
 UserProfileComponent = __decorate([
     core_1.Component({
         selector: 'user-profile',
-        template: "\n            <div class=\"jumbotron\" *ngIf=\"activeUser\">\n                <h2>{{ user.name }} <small>({{ user.username }})</small></h2>\n\n                <input class=\"form-control\" [(ngModel)]=\"activeUser.name\">\n            </div>"
+        template: "\n            <div class=\"jumbotron\" *ngIf=\"user\">\n                <h2>{{ user.name }} <small>({{ user.username }})</small></h2>\n\n                <input class=\"form-control\" [(ngModel)]=\"user.name\">\n            </div>"
     }),
     __metadata("design:paramtypes", [])
 ], UserProfileComponent);

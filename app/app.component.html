@@ -22,13 +22,14 @@
             </ul>
             </div>
 
-            <user-form></user-form>
+            <!-- output, user-form-component.ts -->
+            <user-form (userCreated)="onUserCreated($event)"></user-form>
 
         </div>  
 
         <div class="col-sm-8">
 
-            <!-- child component -->
+            <!-- child component, input, user-profile-component.ts -->
             <user-profile [user]="activeUser"></user-profile>
 
             <div class="jumbotron" *ngIf="!activeUser">

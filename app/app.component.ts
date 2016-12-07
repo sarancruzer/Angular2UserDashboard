@@ -4,7 +4,7 @@ import { User } from './shared/models/user';
 @Component({
   selector: 'my-app',
   templateUrl: './app/app.component.html',
-  styles: ['./app/app.component.css'] 
+  styleUrls: ['./app/app.component.css'] 
 })
 export class AppComponent {
     message: string = 'Test';
@@ -18,5 +18,9 @@ export class AppComponent {
     selectUser(user) {
         this.activeUser = user;
         console.log(this.activeUser);
+    }
+
+    onUserCreated(event) {
+        this.users.push(event.user);
     }
 }
