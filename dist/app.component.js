@@ -27,8 +27,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n    <header>\n        <nav class=\"navbar navbar-inverse\">\n            <div class=\"navbar-header\">\n                <a href=\"/\" class=\"navbar-brand\">User App Dashboard</a>\n            </div>\n        </nav>\n    </header>\n\n<main>\n\n    <div class=\"row\">\n\n        <div class=\"col-sm-4\">\n            <div *ngIf=\"users\">\n            <ul class=\"list-group users-list\">   \n                <li class=\"list-group-item\" \n                    *ngFor=\"let user of users\"\n                    (click)=\"selectUser(user)\"\n                    [class.active]=\"user === activeUser\"> \n                    {{user.name}} ({{user.username}})\n                </li>\n            </ul>\n            </div>\n        </div>  \n\n        <div class=\"col-sm-8\">\n\n            <div class=\"jumbotron\" *ngIf=\"activeUser\">\n            <h2>{{activeUser.name}} <small>({{activeUser.username}})</small></h2>\n            </div>\n\n            <div class=\"jumbotron\" *ngIf=\"!activeUser\">\n            <span class=\"glyphicon glyphicon-hand-left\"></span>\n            <h2>Choose a user</h2>\n            </div>\n\n        </div>\n      \n    </div>\n   \n</main>\n\n    <footer class=\"text-center\">\n        Copyright &copy; 2016\n    </footer>\n  ",
-        styles: ["\n    .users-list li { \n        cursor: pointer;   \n     }\n     .jumbotron .glyphicon {\n         font-size: 80px;\n     }\n  "]
+        templateUrl: './app/app.component.html',
+        styles: ['./app.component.css']
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
