@@ -35,8 +35,7 @@ UserFormComponent = __decorate([
         selector: 'user-form',
         templateUrl: './app/users/user-form.component.html',
         styleUrls: ['./app/users/user-form.component.css']
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], UserFormComponent);
 exports.UserFormComponent = UserFormComponent;
 //# sourceMappingURL=user-form.component.js.map
